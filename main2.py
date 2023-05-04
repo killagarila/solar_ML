@@ -118,9 +118,9 @@ fig = plt.figure(figsize=(20,10))
 ax = fig.add_subplot(111, projection='3d')
 ax.scatter(test_x['Insolation'],test_x['Area'],test_y,c='red', marker='o', alpha=0.5)
 ax.plot_surface(x_surf,y_surf,fittedY.reshape(x_surf.shape), color='b', alpha=0.3)
-ax.set_xlabel('Insolation')
-ax.set_ylabel('Area')
-ax.set_zlabel('Generation')
+ax.set_xlabel('Insolation Irradiance kWh/m2/year')
+ax.set_ylabel('Area m2')
+ax.set_zlabel('Generation kWh/year')
 plt.show()
 
 
